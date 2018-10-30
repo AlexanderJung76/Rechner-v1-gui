@@ -114,7 +114,7 @@ namespace Rechner_v1
         {
             if (opperator == "+")
             {
-                vard2 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
+                vard2 = (Double.Parse(RTB_Ausgabe_Fenster.Text)); // Error Catch Methode benötigt um Leere eingaben zu Verhindern
                 RTB_Ausgabe_Fenster.Clear();
                 ergebnisD = vard1 + vard2;
                 RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisD);
@@ -172,10 +172,5 @@ namespace Rechner_v1
         {
             memory = 0.0;
         }
-
-
-
-
-
     }
 }
