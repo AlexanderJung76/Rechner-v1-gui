@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.RTB_Ausgabe_Fenster = new System.Windows.Forms.RichTextBox();
             this.BTN_Plus = new System.Windows.Forms.Button();
             this.BTN_Minus = new System.Windows.Forms.Button();
@@ -47,19 +48,26 @@
             this.BTN_Ergebnis = new System.Windows.Forms.Button();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.BTN_Sqrt = new System.Windows.Forms.Button();
+            this.BTN_MR = new System.Windows.Forms.Button();
+            this.BTN_MC = new System.Windows.Forms.Button();
+            this.BTN_MS = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RTB_Ausgabe_Fenster
             // 
+            this.RTB_Ausgabe_Fenster.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RTB_Ausgabe_Fenster.Location = new System.Drawing.Point(12, 12);
+            this.RTB_Ausgabe_Fenster.Multiline = false;
             this.RTB_Ausgabe_Fenster.Name = "RTB_Ausgabe_Fenster";
-            this.RTB_Ausgabe_Fenster.Size = new System.Drawing.Size(302, 81);
+            this.RTB_Ausgabe_Fenster.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RTB_Ausgabe_Fenster.Size = new System.Drawing.Size(302, 63);
             this.RTB_Ausgabe_Fenster.TabIndex = 0;
             this.RTB_Ausgabe_Fenster.Text = "";
             // 
             // BTN_Plus
             // 
-            this.BTN_Plus.Location = new System.Drawing.Point(264, 146);
+            this.BTN_Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Plus.Location = new System.Drawing.Point(263, 149);
             this.BTN_Plus.Name = "BTN_Plus";
             this.BTN_Plus.Size = new System.Drawing.Size(50, 50);
             this.BTN_Plus.TabIndex = 1;
@@ -69,7 +77,8 @@
             // 
             // BTN_Minus
             // 
-            this.BTN_Minus.Location = new System.Drawing.Point(264, 202);
+            this.BTN_Minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Minus.Location = new System.Drawing.Point(263, 205);
             this.BTN_Minus.Name = "BTN_Minus";
             this.BTN_Minus.Size = new System.Drawing.Size(50, 50);
             this.BTN_Minus.TabIndex = 2;
@@ -79,7 +88,8 @@
             // 
             // BTN_Multiply
             // 
-            this.BTN_Multiply.Location = new System.Drawing.Point(264, 258);
+            this.BTN_Multiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Multiply.Location = new System.Drawing.Point(263, 261);
             this.BTN_Multiply.Name = "BTN_Multiply";
             this.BTN_Multiply.Size = new System.Drawing.Size(50, 50);
             this.BTN_Multiply.TabIndex = 3;
@@ -89,7 +99,8 @@
             // 
             // BTN_Division
             // 
-            this.BTN_Division.Location = new System.Drawing.Point(264, 314);
+            this.BTN_Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Division.Location = new System.Drawing.Point(263, 317);
             this.BTN_Division.Name = "BTN_Division";
             this.BTN_Division.Size = new System.Drawing.Size(50, 50);
             this.BTN_Division.TabIndex = 4;
@@ -99,7 +110,8 @@
             // 
             // BTN_1
             // 
-            this.BTN_1.Location = new System.Drawing.Point(12, 146);
+            this.BTN_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_1.Location = new System.Drawing.Point(11, 149);
             this.BTN_1.Name = "BTN_1";
             this.BTN_1.Size = new System.Drawing.Size(50, 50);
             this.BTN_1.TabIndex = 5;
@@ -109,7 +121,8 @@
             // 
             // BTN_2
             // 
-            this.BTN_2.Location = new System.Drawing.Point(68, 146);
+            this.BTN_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_2.Location = new System.Drawing.Point(67, 149);
             this.BTN_2.Name = "BTN_2";
             this.BTN_2.Size = new System.Drawing.Size(50, 50);
             this.BTN_2.TabIndex = 6;
@@ -119,7 +132,8 @@
             // 
             // BTN_3
             // 
-            this.BTN_3.Location = new System.Drawing.Point(124, 146);
+            this.BTN_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_3.Location = new System.Drawing.Point(123, 149);
             this.BTN_3.Name = "BTN_3";
             this.BTN_3.Size = new System.Drawing.Size(50, 50);
             this.BTN_3.TabIndex = 7;
@@ -129,7 +143,8 @@
             // 
             // BTN_4
             // 
-            this.BTN_4.Location = new System.Drawing.Point(12, 202);
+            this.BTN_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_4.Location = new System.Drawing.Point(11, 205);
             this.BTN_4.Name = "BTN_4";
             this.BTN_4.Size = new System.Drawing.Size(50, 50);
             this.BTN_4.TabIndex = 8;
@@ -139,7 +154,8 @@
             // 
             // BTN_5
             // 
-            this.BTN_5.Location = new System.Drawing.Point(68, 202);
+            this.BTN_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_5.Location = new System.Drawing.Point(67, 205);
             this.BTN_5.Name = "BTN_5";
             this.BTN_5.Size = new System.Drawing.Size(50, 50);
             this.BTN_5.TabIndex = 9;
@@ -149,7 +165,8 @@
             // 
             // BTN_6
             // 
-            this.BTN_6.Location = new System.Drawing.Point(124, 202);
+            this.BTN_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_6.Location = new System.Drawing.Point(123, 205);
             this.BTN_6.Name = "BTN_6";
             this.BTN_6.Size = new System.Drawing.Size(50, 50);
             this.BTN_6.TabIndex = 10;
@@ -159,7 +176,8 @@
             // 
             // BTN_7
             // 
-            this.BTN_7.Location = new System.Drawing.Point(12, 258);
+            this.BTN_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_7.Location = new System.Drawing.Point(11, 261);
             this.BTN_7.Name = "BTN_7";
             this.BTN_7.Size = new System.Drawing.Size(50, 50);
             this.BTN_7.TabIndex = 11;
@@ -169,7 +187,8 @@
             // 
             // BTN_8
             // 
-            this.BTN_8.Location = new System.Drawing.Point(68, 258);
+            this.BTN_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_8.Location = new System.Drawing.Point(67, 261);
             this.BTN_8.Name = "BTN_8";
             this.BTN_8.Size = new System.Drawing.Size(50, 50);
             this.BTN_8.TabIndex = 12;
@@ -179,7 +198,8 @@
             // 
             // BTN_9
             // 
-            this.BTN_9.Location = new System.Drawing.Point(124, 258);
+            this.BTN_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_9.Location = new System.Drawing.Point(123, 261);
             this.BTN_9.Name = "BTN_9";
             this.BTN_9.Size = new System.Drawing.Size(50, 50);
             this.BTN_9.TabIndex = 13;
@@ -189,7 +209,8 @@
             // 
             // BTN_0
             // 
-            this.BTN_0.Location = new System.Drawing.Point(12, 314);
+            this.BTN_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BTN_0.Location = new System.Drawing.Point(11, 317);
             this.BTN_0.Name = "BTN_0";
             this.BTN_0.Size = new System.Drawing.Size(106, 50);
             this.BTN_0.TabIndex = 14;
@@ -199,7 +220,9 @@
             // 
             // BTN_Comma
             // 
-            this.BTN_Comma.Location = new System.Drawing.Point(124, 314);
+            this.BTN_Comma.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BTN_Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BTN_Comma.Location = new System.Drawing.Point(123, 317);
             this.BTN_Comma.Name = "BTN_Comma";
             this.BTN_Comma.Size = new System.Drawing.Size(50, 50);
             this.BTN_Comma.TabIndex = 15;
@@ -209,7 +232,8 @@
             // 
             // BTN_Ergebnis
             // 
-            this.BTN_Ergebnis.Location = new System.Drawing.Point(208, 258);
+            this.BTN_Ergebnis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Ergebnis.Location = new System.Drawing.Point(207, 261);
             this.BTN_Ergebnis.Name = "BTN_Ergebnis";
             this.BTN_Ergebnis.Size = new System.Drawing.Size(50, 106);
             this.BTN_Ergebnis.TabIndex = 16;
@@ -219,7 +243,8 @@
             // 
             // BTN_Clear
             // 
-            this.BTN_Clear.Location = new System.Drawing.Point(208, 146);
+            this.BTN_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Clear.Location = new System.Drawing.Point(207, 149);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(50, 50);
             this.BTN_Clear.TabIndex = 17;
@@ -229,7 +254,8 @@
             // 
             // BTN_Sqrt
             // 
-            this.BTN_Sqrt.Location = new System.Drawing.Point(208, 202);
+            this.BTN_Sqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Sqrt.Location = new System.Drawing.Point(207, 205);
             this.BTN_Sqrt.Name = "BTN_Sqrt";
             this.BTN_Sqrt.Size = new System.Drawing.Size(50, 50);
             this.BTN_Sqrt.TabIndex = 18;
@@ -237,11 +263,47 @@
             this.BTN_Sqrt.UseVisualStyleBackColor = true;
             this.BTN_Sqrt.Click += new System.EventHandler(this.BTN_Sqrt_Click);
             // 
+            // BTN_MR
+            // 
+            this.BTN_MR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_MR.Location = new System.Drawing.Point(123, 93);
+            this.BTN_MR.Name = "BTN_MR";
+            this.BTN_MR.Size = new System.Drawing.Size(50, 50);
+            this.BTN_MR.TabIndex = 19;
+            this.BTN_MR.Text = "MR";
+            this.BTN_MR.UseVisualStyleBackColor = true;
+            this.BTN_MR.Click += new System.EventHandler(this.BTN_MR_Click);
+            // 
+            // BTN_MC
+            // 
+            this.BTN_MC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_MC.Location = new System.Drawing.Point(207, 93);
+            this.BTN_MC.Name = "BTN_MC";
+            this.BTN_MC.Size = new System.Drawing.Size(50, 50);
+            this.BTN_MC.TabIndex = 20;
+            this.BTN_MC.Text = "MC";
+            this.BTN_MC.UseVisualStyleBackColor = true;
+            this.BTN_MC.Click += new System.EventHandler(this.BTN_MC_Click);
+            // 
+            // BTN_MS
+            // 
+            this.BTN_MS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_MS.Location = new System.Drawing.Point(263, 93);
+            this.BTN_MS.Name = "BTN_MS";
+            this.BTN_MS.Size = new System.Drawing.Size(50, 50);
+            this.BTN_MS.TabIndex = 21;
+            this.BTN_MS.Text = "MS";
+            this.BTN_MS.UseVisualStyleBackColor = true;
+            this.BTN_MS.Click += new System.EventHandler(this.BTN_MS_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 450);
+            this.ClientSize = new System.Drawing.Size(326, 378);
+            this.Controls.Add(this.BTN_MS);
+            this.Controls.Add(this.BTN_MC);
+            this.Controls.Add(this.BTN_MR);
             this.Controls.Add(this.BTN_Sqrt);
             this.Controls.Add(this.BTN_Clear);
             this.Controls.Add(this.BTN_Ergebnis);
@@ -261,8 +323,9 @@
             this.Controls.Add(this.BTN_Minus);
             this.Controls.Add(this.BTN_Plus);
             this.Controls.Add(this.RTB_Ausgabe_Fenster);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calc v1";
             this.ResumeLayout(false);
 
         }
@@ -288,6 +351,9 @@
         private System.Windows.Forms.Button BTN_Ergebnis;
         private System.Windows.Forms.Button BTN_Clear;
         private System.Windows.Forms.Button BTN_Sqrt;
+        private System.Windows.Forms.Button BTN_MR;
+        private System.Windows.Forms.Button BTN_MC;
+        private System.Windows.Forms.Button BTN_MS;
     }
 }
 

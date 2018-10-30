@@ -11,9 +11,8 @@ using System.Windows.Forms;
 namespace Rechner_v1
 {
     public partial class Form1 : Form
-    {
-        public int vari1, vari2,ergebnisI;
-        public double vard1, vard2,ergebnisD;
+    {        
+        public double vard1, vard2, ergebnisD, memory;
         public string opperator = " ";
 
         public Form1()
@@ -23,7 +22,7 @@ namespace Rechner_v1
 
         private void BTN_1_Click(object sender, EventArgs e)
         {
-            RTB_Ausgabe_Fenster.Text += "1";
+            RTB_Ausgabe_Fenster.Text += "1";            
         }
 
         private void BTN_2_Click(object sender, EventArgs e)
@@ -73,30 +72,30 @@ namespace Rechner_v1
 
         private void BTN_Comma_Click(object sender, EventArgs e)
         {
-            RTB_Ausgabe_Fenster.Text += ".";
+            RTB_Ausgabe_Fenster.Text += ",";
         }
 
         private void BTN_Plus_Click(object sender, EventArgs e)
         {
-            vari1 = (Int32.Parse(RTB_Ausgabe_Fenster.Text));
+            vard1 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
             RTB_Ausgabe_Fenster.Clear();
             opperator = "+";
         }
 
         private void BTN_Minus_Click(object sender, EventArgs e)
         {
-            vari1 = (Int32.Parse(RTB_Ausgabe_Fenster.Text));
+            vard1 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
             RTB_Ausgabe_Fenster.Clear();
             opperator = "-";
         }
 
         private void BTN_Multiply_Click(object sender, EventArgs e)
         {
-            vari1 = (Int32.Parse(RTB_Ausgabe_Fenster.Text));
+            vard1 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
             RTB_Ausgabe_Fenster.Clear();
             opperator = "*";
         }
-
+        
         private void BTN_Division_Click(object sender, EventArgs e)
         {
             vard1 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
@@ -115,26 +114,26 @@ namespace Rechner_v1
         {
             if (opperator == "+")
             {
-                vari2 = (Int32.Parse(RTB_Ausgabe_Fenster.Text));
+                vard2 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
                 RTB_Ausgabe_Fenster.Clear();
-                ergebnisI = vari1 + vari2;
-                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisI);
+                ergebnisD = vard1 + vard2;
+                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisD);
             }
 
             if (opperator == "-")
             {
-                vari2 = (Int32.Parse(RTB_Ausgabe_Fenster.Text));
+                vard2 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
                 RTB_Ausgabe_Fenster.Clear();
-                ergebnisI = vari1 - vari2;
-                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisI);
+                ergebnisD = vard1 - vard2;
+                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisD);
             }
 
             if (opperator == "*")
             {
-                vari2 = (Int32.Parse(RTB_Ausgabe_Fenster.Text));
+                vard2 = (Double.Parse(RTB_Ausgabe_Fenster.Text));
                 RTB_Ausgabe_Fenster.Clear();
-                ergebnisI = vari1 * vari2;
-                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisI);
+                ergebnisD = vard1 * vard2;
+                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisD);
             }
 
             if (opperator == "/")
@@ -149,15 +148,34 @@ namespace Rechner_v1
             {
                 RTB_Ausgabe_Fenster.Clear();
                 ergebnisD = Math.Sqrt(vard1);
-                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisD);                
+                RTB_Ausgabe_Fenster.Text = Convert.ToString(ergebnisD);
             }
         }
 
         private void BTN_Clear_Click(object sender, EventArgs e)
-        {
-            vard1 = 0.0; vard2 = 0.0; ergebnisD = 0.0;
-            vari1 = 0; vari2 = 0; ergebnisI = 0;
+        {            
+            vard1 = 0; vard2 = 0; ergebnisD = 0;
             RTB_Ausgabe_Fenster.Clear();
         }
+
+        private void BTN_MS_Click(object sender, EventArgs e)
+        {
+            memory = ergebnisD;
+        }
+
+        private void BTN_MR_Click(object sender, EventArgs e)
+        {
+            RTB_Ausgabe_Fenster.Text = Convert.ToString(memory);
+        }
+
+        private void BTN_MC_Click(object sender, EventArgs e)
+        {
+            memory = 0.0;
+        }
+
+
+
+
+
     }
 }
