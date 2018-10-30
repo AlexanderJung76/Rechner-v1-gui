@@ -12,8 +12,9 @@ namespace Rechner_v1
 {
     public partial class Form1 : Form
     {        
-        public double vard1, vard2, ergebnisD, memory;
-        public string opperator = " ";
+        private double vard1, vard2, ergebnisD, memory;
+        private string opperator = " ";
+        private Color temp_bgColor;
 
         public Form1()
         {
@@ -157,12 +158,12 @@ namespace Rechner_v1
             vard1 = 0; vard2 = 0; ergebnisD = 0;
             RTB_Ausgabe_Fenster.Clear();
         }
-
+        
         private void BTN_MS_Click(object sender, EventArgs e)
         {
             memory = ergebnisD;
         }
-
+        
         private void BTN_MR_Click(object sender, EventArgs e)
         {
             RTB_Ausgabe_Fenster.Text = Convert.ToString(memory);
@@ -171,6 +172,16 @@ namespace Rechner_v1
         private void BTN_MC_Click(object sender, EventArgs e)
         {
             memory = 0.0;
+        }
+
+        private void RB_Defalt_Color_CheckedChanged(object sender, EventArgs e)
+        {
+            this.BackColor = temp_bgColor;
+        }
+
+        private void RB_First_Color_CheckedChanged(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Gray;
         }
     }
 }

@@ -51,6 +51,10 @@
             this.BTN_MR = new System.Windows.Forms.Button();
             this.BTN_MC = new System.Windows.Forms.Button();
             this.BTN_MS = new System.Windows.Forms.Button();
+            this.GB_Farbe = new System.Windows.Forms.GroupBox();
+            this.RB_Defalt_Color = new System.Windows.Forms.RadioButton();
+            this.RB_First_Color = new System.Windows.Forms.RadioButton();
+            this.GB_Farbe.SuspendLayout();
             this.SuspendLayout();
             // 
             // RTB_Ausgabe_Fenster
@@ -296,11 +300,47 @@
             this.BTN_MS.UseVisualStyleBackColor = true;
             this.BTN_MS.Click += new System.EventHandler(this.BTN_MS_Click);
             // 
+            // GB_Farbe
+            // 
+            this.GB_Farbe.Controls.Add(this.RB_First_Color);
+            this.GB_Farbe.Controls.Add(this.RB_Defalt_Color);
+            this.GB_Farbe.Location = new System.Drawing.Point(12, 81);
+            this.GB_Farbe.Name = "GB_Farbe";
+            this.GB_Farbe.Size = new System.Drawing.Size(105, 62);
+            this.GB_Farbe.TabIndex = 22;
+            this.GB_Farbe.TabStop = false;
+            this.GB_Farbe.Text = "Farbe";
+            // 
+            // RB_Defalt_Color
+            // 
+            this.RB_Defalt_Color.AutoSize = true;
+            this.RB_Defalt_Color.Location = new System.Drawing.Point(7, 20);
+            this.RB_Defalt_Color.Name = "RB_Defalt_Color";
+            this.RB_Defalt_Color.Size = new System.Drawing.Size(59, 17);
+            this.RB_Defalt_Color.TabIndex = 0;
+            this.RB_Defalt_Color.TabStop = true;
+            this.RB_Defalt_Color.Text = "Default";
+            this.RB_Defalt_Color.UseVisualStyleBackColor = true;
+            this.RB_Defalt_Color.CheckedChanged += new System.EventHandler(this.RB_Defalt_Color_CheckedChanged);
+            // 
+            // RB_First_Color
+            // 
+            this.RB_First_Color.AutoSize = true;
+            this.RB_First_Color.Location = new System.Drawing.Point(7, 39);
+            this.RB_First_Color.Name = "RB_First_Color";
+            this.RB_First_Color.Size = new System.Drawing.Size(48, 17);
+            this.RB_First_Color.TabIndex = 1;
+            this.RB_First_Color.TabStop = true;
+            this.RB_First_Color.Text = "Grau";
+            this.RB_First_Color.UseVisualStyleBackColor = true;
+            this.RB_First_Color.CheckedChanged += new System.EventHandler(this.RB_First_Color_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 378);
+            this.Controls.Add(this.GB_Farbe);
             this.Controls.Add(this.BTN_MS);
             this.Controls.Add(this.BTN_MC);
             this.Controls.Add(this.BTN_MR);
@@ -326,6 +366,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calc v1";
+            this.GB_Farbe.ResumeLayout(false);
+            this.GB_Farbe.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -354,6 +396,9 @@
         private System.Windows.Forms.Button BTN_MR;
         private System.Windows.Forms.Button BTN_MC;
         private System.Windows.Forms.Button BTN_MS;
+        private System.Windows.Forms.GroupBox GB_Farbe;
+        private System.Windows.Forms.RadioButton RB_First_Color;
+        private System.Windows.Forms.RadioButton RB_Defalt_Color;
     }
 }
 
