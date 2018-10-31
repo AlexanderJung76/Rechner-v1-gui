@@ -52,8 +52,12 @@
             this.BTN_MC = new System.Windows.Forms.Button();
             this.BTN_MS = new System.Windows.Forms.Button();
             this.GB_Farbe = new System.Windows.Forms.GroupBox();
-            this.RB_Defalt_Color = new System.Windows.Forms.RadioButton();
             this.RB_First_Color = new System.Windows.Forms.RadioButton();
+            this.RB_Defalt_Color = new System.Windows.Forms.RadioButton();
+            this.BTN_Prozent = new System.Windows.Forms.Button();
+            this.BTN_X2 = new System.Windows.Forms.Button();
+            this.BTN_Negative = new System.Windows.Forms.Button();
+            this.BTN_Backspace = new System.Windows.Forms.Button();
             this.GB_Farbe.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,8 +74,8 @@
             // 
             // BTN_Plus
             // 
-            this.BTN_Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Plus.Location = new System.Drawing.Point(263, 149);
+            this.BTN_Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Plus.Location = new System.Drawing.Point(264, 197);
             this.BTN_Plus.Name = "BTN_Plus";
             this.BTN_Plus.Size = new System.Drawing.Size(50, 50);
             this.BTN_Plus.TabIndex = 1;
@@ -81,8 +85,8 @@
             // 
             // BTN_Minus
             // 
-            this.BTN_Minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Minus.Location = new System.Drawing.Point(263, 205);
+            this.BTN_Minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Minus.Location = new System.Drawing.Point(264, 253);
             this.BTN_Minus.Name = "BTN_Minus";
             this.BTN_Minus.Size = new System.Drawing.Size(50, 50);
             this.BTN_Minus.TabIndex = 2;
@@ -92,8 +96,8 @@
             // 
             // BTN_Multiply
             // 
-            this.BTN_Multiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Multiply.Location = new System.Drawing.Point(263, 261);
+            this.BTN_Multiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Multiply.Location = new System.Drawing.Point(264, 309);
             this.BTN_Multiply.Name = "BTN_Multiply";
             this.BTN_Multiply.Size = new System.Drawing.Size(50, 50);
             this.BTN_Multiply.TabIndex = 3;
@@ -103,8 +107,8 @@
             // 
             // BTN_Division
             // 
-            this.BTN_Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Division.Location = new System.Drawing.Point(263, 317);
+            this.BTN_Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Division.Location = new System.Drawing.Point(264, 365);
             this.BTN_Division.Name = "BTN_Division";
             this.BTN_Division.Size = new System.Drawing.Size(50, 50);
             this.BTN_Division.TabIndex = 4;
@@ -114,8 +118,8 @@
             // 
             // BTN_1
             // 
-            this.BTN_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_1.Location = new System.Drawing.Point(11, 149);
+            this.BTN_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_1.Location = new System.Drawing.Point(12, 309);
             this.BTN_1.Name = "BTN_1";
             this.BTN_1.Size = new System.Drawing.Size(50, 50);
             this.BTN_1.TabIndex = 5;
@@ -125,8 +129,8 @@
             // 
             // BTN_2
             // 
-            this.BTN_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_2.Location = new System.Drawing.Point(67, 149);
+            this.BTN_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_2.Location = new System.Drawing.Point(68, 309);
             this.BTN_2.Name = "BTN_2";
             this.BTN_2.Size = new System.Drawing.Size(50, 50);
             this.BTN_2.TabIndex = 6;
@@ -136,8 +140,8 @@
             // 
             // BTN_3
             // 
-            this.BTN_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_3.Location = new System.Drawing.Point(123, 149);
+            this.BTN_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_3.Location = new System.Drawing.Point(124, 309);
             this.BTN_3.Name = "BTN_3";
             this.BTN_3.Size = new System.Drawing.Size(50, 50);
             this.BTN_3.TabIndex = 7;
@@ -147,8 +151,8 @@
             // 
             // BTN_4
             // 
-            this.BTN_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_4.Location = new System.Drawing.Point(11, 205);
+            this.BTN_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_4.Location = new System.Drawing.Point(12, 253);
             this.BTN_4.Name = "BTN_4";
             this.BTN_4.Size = new System.Drawing.Size(50, 50);
             this.BTN_4.TabIndex = 8;
@@ -158,8 +162,8 @@
             // 
             // BTN_5
             // 
-            this.BTN_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_5.Location = new System.Drawing.Point(67, 205);
+            this.BTN_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_5.Location = new System.Drawing.Point(68, 253);
             this.BTN_5.Name = "BTN_5";
             this.BTN_5.Size = new System.Drawing.Size(50, 50);
             this.BTN_5.TabIndex = 9;
@@ -169,8 +173,8 @@
             // 
             // BTN_6
             // 
-            this.BTN_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_6.Location = new System.Drawing.Point(123, 205);
+            this.BTN_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_6.Location = new System.Drawing.Point(124, 253);
             this.BTN_6.Name = "BTN_6";
             this.BTN_6.Size = new System.Drawing.Size(50, 50);
             this.BTN_6.TabIndex = 10;
@@ -180,8 +184,8 @@
             // 
             // BTN_7
             // 
-            this.BTN_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_7.Location = new System.Drawing.Point(11, 261);
+            this.BTN_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_7.Location = new System.Drawing.Point(12, 197);
             this.BTN_7.Name = "BTN_7";
             this.BTN_7.Size = new System.Drawing.Size(50, 50);
             this.BTN_7.TabIndex = 11;
@@ -191,8 +195,8 @@
             // 
             // BTN_8
             // 
-            this.BTN_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_8.Location = new System.Drawing.Point(67, 261);
+            this.BTN_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_8.Location = new System.Drawing.Point(68, 197);
             this.BTN_8.Name = "BTN_8";
             this.BTN_8.Size = new System.Drawing.Size(50, 50);
             this.BTN_8.TabIndex = 12;
@@ -202,8 +206,8 @@
             // 
             // BTN_9
             // 
-            this.BTN_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_9.Location = new System.Drawing.Point(123, 261);
+            this.BTN_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_9.Location = new System.Drawing.Point(124, 197);
             this.BTN_9.Name = "BTN_9";
             this.BTN_9.Size = new System.Drawing.Size(50, 50);
             this.BTN_9.TabIndex = 13;
@@ -213,10 +217,10 @@
             // 
             // BTN_0
             // 
-            this.BTN_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_0.Location = new System.Drawing.Point(11, 317);
+            this.BTN_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.BTN_0.Location = new System.Drawing.Point(68, 365);
             this.BTN_0.Name = "BTN_0";
-            this.BTN_0.Size = new System.Drawing.Size(106, 50);
+            this.BTN_0.Size = new System.Drawing.Size(50, 50);
             this.BTN_0.TabIndex = 14;
             this.BTN_0.Text = "0";
             this.BTN_0.UseVisualStyleBackColor = true;
@@ -225,8 +229,8 @@
             // BTN_Comma
             // 
             this.BTN_Comma.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BTN_Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_Comma.Location = new System.Drawing.Point(123, 317);
+            this.BTN_Comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.BTN_Comma.Location = new System.Drawing.Point(124, 365);
             this.BTN_Comma.Name = "BTN_Comma";
             this.BTN_Comma.Size = new System.Drawing.Size(50, 50);
             this.BTN_Comma.TabIndex = 15;
@@ -236,8 +240,8 @@
             // 
             // BTN_Ergebnis
             // 
-            this.BTN_Ergebnis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ergebnis.Location = new System.Drawing.Point(207, 261);
+            this.BTN_Ergebnis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Ergebnis.Location = new System.Drawing.Point(208, 309);
             this.BTN_Ergebnis.Name = "BTN_Ergebnis";
             this.BTN_Ergebnis.Size = new System.Drawing.Size(50, 106);
             this.BTN_Ergebnis.TabIndex = 16;
@@ -248,7 +252,7 @@
             // BTN_Clear
             // 
             this.BTN_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Clear.Location = new System.Drawing.Point(207, 149);
+            this.BTN_Clear.Location = new System.Drawing.Point(208, 141);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(50, 50);
             this.BTN_Clear.TabIndex = 17;
@@ -258,8 +262,8 @@
             // 
             // BTN_Sqrt
             // 
-            this.BTN_Sqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Sqrt.Location = new System.Drawing.Point(207, 205);
+            this.BTN_Sqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Sqrt.Location = new System.Drawing.Point(208, 253);
             this.BTN_Sqrt.Name = "BTN_Sqrt";
             this.BTN_Sqrt.Size = new System.Drawing.Size(50, 50);
             this.BTN_Sqrt.TabIndex = 18;
@@ -270,7 +274,7 @@
             // BTN_MR
             // 
             this.BTN_MR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_MR.Location = new System.Drawing.Point(123, 93);
+            this.BTN_MR.Location = new System.Drawing.Point(207, 81);
             this.BTN_MR.Name = "BTN_MR";
             this.BTN_MR.Size = new System.Drawing.Size(50, 50);
             this.BTN_MR.TabIndex = 19;
@@ -281,7 +285,7 @@
             // BTN_MC
             // 
             this.BTN_MC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_MC.Location = new System.Drawing.Point(207, 93);
+            this.BTN_MC.Location = new System.Drawing.Point(151, 81);
             this.BTN_MC.Name = "BTN_MC";
             this.BTN_MC.Size = new System.Drawing.Size(50, 50);
             this.BTN_MC.TabIndex = 20;
@@ -292,7 +296,7 @@
             // BTN_MS
             // 
             this.BTN_MS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_MS.Location = new System.Drawing.Point(263, 93);
+            this.BTN_MS.Location = new System.Drawing.Point(264, 81);
             this.BTN_MS.Name = "BTN_MS";
             this.BTN_MS.Size = new System.Drawing.Size(50, 50);
             this.BTN_MS.TabIndex = 21;
@@ -304,24 +308,12 @@
             // 
             this.GB_Farbe.Controls.Add(this.RB_First_Color);
             this.GB_Farbe.Controls.Add(this.RB_Defalt_Color);
-            this.GB_Farbe.Location = new System.Drawing.Point(12, 81);
+            this.GB_Farbe.Location = new System.Drawing.Point(13, 85);
             this.GB_Farbe.Name = "GB_Farbe";
             this.GB_Farbe.Size = new System.Drawing.Size(105, 62);
             this.GB_Farbe.TabIndex = 22;
             this.GB_Farbe.TabStop = false;
             this.GB_Farbe.Text = "Farbe";
-            // 
-            // RB_Defalt_Color
-            // 
-            this.RB_Defalt_Color.AutoSize = true;
-            this.RB_Defalt_Color.Location = new System.Drawing.Point(7, 20);
-            this.RB_Defalt_Color.Name = "RB_Defalt_Color";
-            this.RB_Defalt_Color.Size = new System.Drawing.Size(59, 17);
-            this.RB_Defalt_Color.TabIndex = 0;
-            this.RB_Defalt_Color.TabStop = true;
-            this.RB_Defalt_Color.Text = "Default";
-            this.RB_Defalt_Color.UseVisualStyleBackColor = true;
-            this.RB_Defalt_Color.CheckedChanged += new System.EventHandler(this.RB_Defalt_Color_CheckedChanged);
             // 
             // RB_First_Color
             // 
@@ -335,11 +327,71 @@
             this.RB_First_Color.UseVisualStyleBackColor = true;
             this.RB_First_Color.CheckedChanged += new System.EventHandler(this.RB_First_Color_CheckedChanged);
             // 
+            // RB_Defalt_Color
+            // 
+            this.RB_Defalt_Color.AutoSize = true;
+            this.RB_Defalt_Color.Location = new System.Drawing.Point(7, 20);
+            this.RB_Defalt_Color.Name = "RB_Defalt_Color";
+            this.RB_Defalt_Color.Size = new System.Drawing.Size(59, 17);
+            this.RB_Defalt_Color.TabIndex = 0;
+            this.RB_Defalt_Color.TabStop = true;
+            this.RB_Defalt_Color.Text = "Default";
+            this.RB_Defalt_Color.UseVisualStyleBackColor = true;
+            this.RB_Defalt_Color.CheckedChanged += new System.EventHandler(this.RB_Defalt_Color_CheckedChanged);
+            // 
+            // BTN_Prozent
+            // 
+            this.BTN_Prozent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Prozent.Location = new System.Drawing.Point(264, 141);
+            this.BTN_Prozent.Name = "BTN_Prozent";
+            this.BTN_Prozent.Size = new System.Drawing.Size(50, 50);
+            this.BTN_Prozent.TabIndex = 23;
+            this.BTN_Prozent.Text = "%";
+            this.BTN_Prozent.UseVisualStyleBackColor = true;
+            this.BTN_Prozent.Click += new System.EventHandler(this.BTN_Prozent_Click);
+            // 
+            // BTN_X2
+            // 
+            this.BTN_X2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_X2.Location = new System.Drawing.Point(208, 197);
+            this.BTN_X2.Name = "BTN_X2";
+            this.BTN_X2.Size = new System.Drawing.Size(50, 50);
+            this.BTN_X2.TabIndex = 24;
+            this.BTN_X2.Text = "x2";
+            this.BTN_X2.UseVisualStyleBackColor = true;
+            this.BTN_X2.Click += new System.EventHandler(this.BTN_X2_Click);
+            // 
+            // BTN_Negative
+            // 
+            this.BTN_Negative.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Negative.Location = new System.Drawing.Point(12, 365);
+            this.BTN_Negative.Name = "BTN_Negative";
+            this.BTN_Negative.Size = new System.Drawing.Size(50, 50);
+            this.BTN_Negative.TabIndex = 25;
+            this.BTN_Negative.Text = "±";
+            this.BTN_Negative.UseVisualStyleBackColor = true;
+            this.BTN_Negative.Click += new System.EventHandler(this.BTN_Negative_Click);
+            // 
+            // BTN_Backspace
+            // 
+            this.BTN_Backspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Backspace.Location = new System.Drawing.Point(124, 141);
+            this.BTN_Backspace.Name = "BTN_Backspace";
+            this.BTN_Backspace.Size = new System.Drawing.Size(50, 50);
+            this.BTN_Backspace.TabIndex = 26;
+            this.BTN_Backspace.Text = "←";
+            this.BTN_Backspace.UseVisualStyleBackColor = true;
+            this.BTN_Backspace.Click += new System.EventHandler(this.BTN_Backspace_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 378);
+            this.ClientSize = new System.Drawing.Size(326, 423);
+            this.Controls.Add(this.BTN_Backspace);
+            this.Controls.Add(this.BTN_Negative);
+            this.Controls.Add(this.BTN_X2);
+            this.Controls.Add(this.BTN_Prozent);
             this.Controls.Add(this.GB_Farbe);
             this.Controls.Add(this.BTN_MS);
             this.Controls.Add(this.BTN_MC);
@@ -399,6 +451,10 @@
         private System.Windows.Forms.GroupBox GB_Farbe;
         private System.Windows.Forms.RadioButton RB_First_Color;
         private System.Windows.Forms.RadioButton RB_Defalt_Color;
+        private System.Windows.Forms.Button BTN_Prozent;
+        private System.Windows.Forms.Button BTN_X2;
+        private System.Windows.Forms.Button BTN_Negative;
+        private System.Windows.Forms.Button BTN_Backspace;
     }
 }
 
