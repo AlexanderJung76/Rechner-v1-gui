@@ -58,6 +58,7 @@
             this.BTN_X2 = new System.Windows.Forms.Button();
             this.BTN_Negative = new System.Windows.Forms.Button();
             this.BTN_Backspace = new System.Windows.Forms.Button();
+            this.BTN_CE = new System.Windows.Forms.Button();
             this.GB_Farbe.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -256,7 +257,7 @@
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(50, 50);
             this.BTN_Clear.TabIndex = 17;
-            this.BTN_Clear.Text = "CR";
+            this.BTN_Clear.Text = "C";
             this.BTN_Clear.UseVisualStyleBackColor = true;
             this.BTN_Clear.Click += new System.EventHandler(this.BTN_Clear_Click);
             // 
@@ -375,19 +376,31 @@
             // BTN_Backspace
             // 
             this.BTN_Backspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Backspace.Location = new System.Drawing.Point(124, 141);
+            this.BTN_Backspace.Location = new System.Drawing.Point(68, 153);
             this.BTN_Backspace.Name = "BTN_Backspace";
-            this.BTN_Backspace.Size = new System.Drawing.Size(50, 50);
+            this.BTN_Backspace.Size = new System.Drawing.Size(50, 38);
             this.BTN_Backspace.TabIndex = 26;
             this.BTN_Backspace.Text = "←";
             this.BTN_Backspace.UseVisualStyleBackColor = true;
             this.BTN_Backspace.Click += new System.EventHandler(this.BTN_Backspace_Click);
+            // 
+            // BTN_CE
+            // 
+            this.BTN_CE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_CE.Location = new System.Drawing.Point(124, 141);
+            this.BTN_CE.Name = "BTN_CE";
+            this.BTN_CE.Size = new System.Drawing.Size(50, 50);
+            this.BTN_CE.TabIndex = 27;
+            this.BTN_CE.Text = "CE";
+            this.BTN_CE.UseVisualStyleBackColor = true;
+            this.BTN_CE.Click += new System.EventHandler(this.BTN_CE_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 423);
+            this.Controls.Add(this.BTN_CE);
             this.Controls.Add(this.BTN_Backspace);
             this.Controls.Add(this.BTN_Negative);
             this.Controls.Add(this.BTN_X2);
@@ -455,6 +468,7 @@
         private System.Windows.Forms.Button BTN_X2;
         private System.Windows.Forms.Button BTN_Negative;
         private System.Windows.Forms.Button BTN_Backspace;
+        private System.Windows.Forms.Button BTN_CE;
     }
 }
 
